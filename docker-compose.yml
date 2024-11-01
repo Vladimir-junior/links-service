@@ -1,0 +1,31 @@
+volumes:
+  pgdb_data:
+    driver: local
+
+services:
+  pgdb:
+    image: postgres
+    environment:
+      POSTGRES_DB: "lnk_srv_db"
+      POSTGRES_USER: "lnk_srv_name"
+      POSTGRES_PASSWORD: "lnk_srv_pass"
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdb_data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+
+  app:
+    build: .
+    working_dir: /app
+    volumes:
+      - ./app:/app
+    depends_on:
+      - pgdb
+    ports:
+      - 8000:8000
+    command: sleep 10000000
