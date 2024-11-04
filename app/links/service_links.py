@@ -1,15 +1,18 @@
-from bs4 import BeautifulSoup
 import requests
+
+from bs4 import BeautifulSoup
 
 
 class ServiceLink:
     @staticmethod
     def parse_link(url: str) -> dict:
+        from links.models import LinkTypeEnum
+
         data = {
             'title': '',
             'description': '',
             'preview_image': '',
-            'link_type': 'website'
+            'link_type': LinkTypeEnum.WEBSITE.value
         }
 
         try:
@@ -28,6 +31,6 @@ class ServiceLink:
             data['link_type'] = og_type['content'] if og_type else data['link_type']
 
         except requests.RequestException as error:
-            print(f"Error fetching URL: {error}")
+            raise ValueError(f"Error fetching URL: {error}") from error
 
         return data

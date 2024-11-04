@@ -1,18 +1,20 @@
+from typing import Any, Dict
 from rest_framework import serializers
 
 from links.models import Link, Collection
-from links.api.v1.service_links import ServiceLink
+from links.service_links import ServiceLink
 
 
 class LinkSerializer(serializers.ModelSerializer):
     title = serializers.CharField(required=False)
     owner = serializers.PrimaryKeyRelatedField(read_only=True)
+    links = serializers.ListField(child=serializers.PrimaryKeyRelatedField(queryset=Link.objects.all()), required=False)
 
     class Meta:
         model = Link
         fields = '__all__'
 
-    def create(self, validated_data):
+    def create(self, validated_data: Dict[str, Any]) -> Link:
         url = validated_data.pop('url')
         parsed_data = ServiceLink.parse_link(url)
 
@@ -33,16 +35,16 @@ class CollectionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Collection
-        fields = ['id', 'title', 'description', 'created_date', 'updated_date', 'owner', 'links']
+        fields = ['id', 'title', 'description', 'created_at', 'updated_at', 'owner', 'links']
         read_only_fields = ['owner', 'created_date', 'updated_date']
 
-    def create(self, validated_data):
+    def create(self, validated_data: Dict[str, Any]) -> Collection:
         links = validated_data.pop('links', [])
         collection = Collection.objects.create(**validated_data)
         collection.links.set(links)
         return collection
 
-    def update(self, instance, validated_data):
+    def update(self, instance: Collection, validated_data: Dict[str, Any]) -> Collection:
         links = validated_data.pop('links', None)
         for attr, value in validated_data.items():
             setattr(instance, attr, value)

@@ -1,6 +1,12 @@
+import os
+
 from pathlib import Path
+from dotenv import load_dotenv
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv()
 
 SECRET_KEY = 'django-insecure-zlreubm(=vex2fsz+1iiq#2@p#-x7qd4p*kf6wo-6e2pp=h0cf'
 
@@ -63,11 +69,11 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'lnk_srv_db',
-        'USER': 'lnk_srv_name',
-        'PASSWORD': 'lnk_srv_pass',
-        'HOST': 'pgdb',
-        'PORT': '5432',
+        'NAME': os.environ.get('POSTGRES_DB'),
+        'USER': os.environ.get('POSTGRES_USER'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+        'HOST': os.environ.get('POSTGRES_HOST'),
+        'PORT': os.environ.get('POSTGRES_PORT'),
     }
 }
 

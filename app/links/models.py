@@ -1,8 +1,22 @@
+from enum import Enum
+from typing import List
 from django.db import models
 from django.db.models import UniqueConstraint
 
 from users.models import User
-from links.api.v1.service_links import ServiceLink
+from links.service_links import ServiceLink
+
+
+class LinkTypeEnum(Enum):
+    WEBSITE = 'website'
+    BOOK = 'book'
+    ARTICLE = 'article'
+    MUSIC = 'music'
+    VIDEO = 'video'
+
+    @classmethod
+    def choices(cls) -> List[tuple]:
+        return [(choice.value, choice.name.capitalize()) for choice in cls]
 
 
 class Link(models.Model):
@@ -12,16 +26,11 @@ class Link(models.Model):
     preview_image = models.URLField(null=True, blank=True)
     link_type = models.CharField(
         max_length=20,
-        choices=[('website', 'Website'),
-                 ('book', 'Book'),
-                 ('article', 'Article'),
-                 ('music', 'Music'),
-                 ('video', 'Video')
-                 ],
-        default='website'
+        choices=LinkTypeEnum.choices(),
+        default=LinkTypeEnum.WEBSITE.value
     )
-    created_date = models.DateTimeField(auto_now_add=True)
-    updated_date = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name="links")
 
     class Meta:
@@ -32,7 +41,7 @@ class Link(models.Model):
     def __str__(self):
         return self.title
 
-    def fetch_link_data(self):
+    def fetch_link_data(self) -> None:
         data = ServiceLink.parse_link(self.url)
         self.title = data['title'] or self.title
         self.description = data['description'] or self.description
@@ -43,8 +52,8 @@ class Link(models.Model):
 class Collection(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField(null=True, blank=True)
-    created_date = models.DateTimeField(auto_now_add=True)
-    updated_date = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name="collections")
     links = models.ManyToManyField(Link, related_name="collections")
 

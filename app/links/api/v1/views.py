@@ -1,5 +1,5 @@
-from rest_framework import viewsets, permissions, status
-from rest_framework.response import Response
+from rest_framework import viewsets, permissions
+from rest_framework.serializers import Serializer
 
 from links.models import Link, Collection
 from links.api.v1.serializers import LinkSerializer, CollectionSerializer
@@ -13,19 +13,8 @@ class LinkViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         return self.queryset.filter(owner=self.request.user)
 
-    def perform_create(self, serializer):
+    def perform_create(self, serializer: Serializer) -> None:
         serializer.save(owner=self.request.user)
-
-    def create(self, request, *args, **kwargs):
-        url = request.data.get('url')
-        if not url:
-            return Response({"error": "URL is required."}, status=status.HTTP_400_BAD_REQUEST)
-
-        serializer = self.get_serializer(data={'url': url})
-        serializer.is_valid(raise_exception=True)
-        self.perform_create(serializer)
-
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
 class CollectionViewSet(viewsets.ModelViewSet):
@@ -36,5 +25,5 @@ class CollectionViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         return self.queryset.filter(owner=self.request.user)
 
-    def perform_create(self, serializer):
+    def perform_create(self, serializer: Serializer) -> None:
         serializer.save(owner=self.request.user)

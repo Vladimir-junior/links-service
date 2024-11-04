@@ -1,16 +1,15 @@
 from django.contrib import admin
-from django.contrib.auth.models import User
 
 from links.models import Link, Collection
 
 
 class LinkAdmin(admin.ModelAdmin):
-    list_display = ('title', 'description', 'link_type', 'created_date', 'updated_date', 'url', 'owner')
+    list_display = ('title', 'description', 'link_type', 'created_at', 'updated_at', 'url', 'owner')
     search_fields = ('title', )
 
 
 class CollectionAdmin(admin.ModelAdmin):
-    list_display = ('title', 'description', 'owner', 'created_date', 'updated_date')
+    list_display = ('title', 'description', 'owner', 'created_at', 'updated_at')
     search_fields = ('title', )
 
 
