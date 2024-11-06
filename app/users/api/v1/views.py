@@ -1,5 +1,7 @@
+from django.db import connection
 from rest_framework import status
 from rest_framework import viewsets
+from rest_framework.views import APIView
 from rest_framework.request import Request
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -104,3 +106,32 @@ class UserViewSet(viewsets.ModelViewSet):
             result = serializer.errors
             response_status = status.HTTP_400_BAD_REQUEST
         return Response(result, status=response_status)
+
+
+class TopUsersView(APIView):
+    def get(self, request):
+        query = """
+            SELECT 
+                u.id, 
+                u.email, 
+                COUNT(l.id) AS link_count
+            FROM 
+                users_user AS u
+            LEFT JOIN 
+                links_link AS l ON u.id = l.owner_id
+            GROUP BY 
+                u.id
+            ORDER BY 
+                link_count DESC, 
+                u.date_joined ASC
+            LIMIT 10;
+        """
+
+        with connection.cursor() as cursor:
+            cursor.execute(query)
+            rows = cursor.fetchall()
+
+        users_data = [
+            {"id": row[0], "email": row[1], "link_count": row[2]} for row in rows
+        ]
+        return Response(users_data)

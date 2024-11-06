@@ -1,453 +1,5 @@
 [
   {
-    "model": "auth.permission",
-    "pk": 1,
-    "fields": {
-      "name": "Can add log entry",
-      "content_type": 1,
-      "codename": "add_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 2,
-    "fields": {
-      "name": "Can change log entry",
-      "content_type": 1,
-      "codename": "change_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 3,
-    "fields": {
-      "name": "Can delete log entry",
-      "content_type": 1,
-      "codename": "delete_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 4,
-    "fields": {
-      "name": "Can view log entry",
-      "content_type": 1,
-      "codename": "view_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 5,
-    "fields": {
-      "name": "Can add permission",
-      "content_type": 2,
-      "codename": "add_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 6,
-    "fields": {
-      "name": "Can change permission",
-      "content_type": 2,
-      "codename": "change_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 7,
-    "fields": {
-      "name": "Can delete permission",
-      "content_type": 2,
-      "codename": "delete_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 8,
-    "fields": {
-      "name": "Can view permission",
-      "content_type": 2,
-      "codename": "view_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 9,
-    "fields": {
-      "name": "Can add group",
-      "content_type": 3,
-      "codename": "add_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 10,
-    "fields": {
-      "name": "Can change group",
-      "content_type": 3,
-      "codename": "change_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 11,
-    "fields": {
-      "name": "Can delete group",
-      "content_type": 3,
-      "codename": "delete_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 12,
-    "fields": {
-      "name": "Can view group",
-      "content_type": 3,
-      "codename": "view_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 13,
-    "fields": {
-      "name": "Can add content type",
-      "content_type": 4,
-      "codename": "add_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 14,
-    "fields": {
-      "name": "Can change content type",
-      "content_type": 4,
-      "codename": "change_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 15,
-    "fields": {
-      "name": "Can delete content type",
-      "content_type": 4,
-      "codename": "delete_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 16,
-    "fields": {
-      "name": "Can view content type",
-      "content_type": 4,
-      "codename": "view_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 17,
-    "fields": {
-      "name": "Can add session",
-      "content_type": 5,
-      "codename": "add_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 18,
-    "fields": {
-      "name": "Can change session",
-      "content_type": 5,
-      "codename": "change_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 19,
-    "fields": {
-      "name": "Can delete session",
-      "content_type": 5,
-      "codename": "delete_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 20,
-    "fields": {
-      "name": "Can view session",
-      "content_type": 5,
-      "codename": "view_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 21,
-    "fields": {
-      "name": "Can add Token",
-      "content_type": 6,
-      "codename": "add_token"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 22,
-    "fields": {
-      "name": "Can change Token",
-      "content_type": 6,
-      "codename": "change_token"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 23,
-    "fields": {
-      "name": "Can delete Token",
-      "content_type": 6,
-      "codename": "delete_token"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 24,
-    "fields": {
-      "name": "Can view Token",
-      "content_type": 6,
-      "codename": "view_token"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 25,
-    "fields": {
-      "name": "Can add Token",
-      "content_type": 7,
-      "codename": "add_tokenproxy"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 26,
-    "fields": {
-      "name": "Can change Token",
-      "content_type": 7,
-      "codename": "change_tokenproxy"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 27,
-    "fields": {
-      "name": "Can delete Token",
-      "content_type": 7,
-      "codename": "delete_tokenproxy"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 28,
-    "fields": {
-      "name": "Can view Token",
-      "content_type": 7,
-      "codename": "view_tokenproxy"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 29,
-    "fields": {
-      "name": "Can add user",
-      "content_type": 8,
-      "codename": "add_user"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 30,
-    "fields": {
-      "name": "Can change user",
-      "content_type": 8,
-      "codename": "change_user"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 31,
-    "fields": {
-      "name": "Can delete user",
-      "content_type": 8,
-      "codename": "delete_user"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 32,
-    "fields": {
-      "name": "Can view user",
-      "content_type": 8,
-      "codename": "view_user"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 33,
-    "fields": {
-      "name": "Can add link",
-      "content_type": 9,
-      "codename": "add_link"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 34,
-    "fields": {
-      "name": "Can change link",
-      "content_type": 9,
-      "codename": "change_link"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 35,
-    "fields": {
-      "name": "Can delete link",
-      "content_type": 9,
-      "codename": "delete_link"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 36,
-    "fields": {
-      "name": "Can view link",
-      "content_type": 9,
-      "codename": "view_link"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 37,
-    "fields": {
-      "name": "Can add collection",
-      "content_type": 10,
-      "codename": "add_collection"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 38,
-    "fields": {
-      "name": "Can change collection",
-      "content_type": 10,
-      "codename": "change_collection"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 39,
-    "fields": {
-      "name": "Can delete collection",
-      "content_type": 10,
-      "codename": "delete_collection"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 40,
-    "fields": {
-      "name": "Can view collection",
-      "content_type": 10,
-      "codename": "view_collection"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 1,
-    "fields": {
-      "app_label": "admin",
-      "model": "logentry"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 2,
-    "fields": {
-      "app_label": "auth",
-      "model": "permission"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 3,
-    "fields": {
-      "app_label": "auth",
-      "model": "group"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 4,
-    "fields": {
-      "app_label": "contenttypes",
-      "model": "contenttype"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 5,
-    "fields": {
-      "app_label": "sessions",
-      "model": "session"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 6,
-    "fields": {
-      "app_label": "authtoken",
-      "model": "token"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 7,
-    "fields": {
-      "app_label": "authtoken",
-      "model": "tokenproxy"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 8,
-    "fields": {
-      "app_label": "users",
-      "model": "user"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 9,
-    "fields": {
-      "app_label": "links",
-      "model": "link"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 10,
-    "fields": {
-      "app_label": "links",
-      "model": "collection"
-    }
-  },
-  {
-    "model": "sessions.session",
-    "pk": "xqasly3q856fwzoi6bg97l4n9p2257f9",
-    "fields": {
-      "session_data": ".eJxVjDsOwjAQBe_iGlk26w9Q0nMGa9e7xgEUS3FSIe5OIqWA9s3Me6uEy1zT0mVKA6uLsurwuxHmp4wb4AeO96ZzG-dpIL0peqdd3xrL67q7fwcVe11rYnHgkSW4gjbmGEgs-fMxWCpgxQcbDTCYGOKJAAp6XG3j0HlfGNTnC_SOOCE:1t7xNv:_BwbfsDNFNQgnabr2meelvemoWt_QXYtm1J-qbTw8Us",
-      "expire_date": "2024-11-18T13:44:47.644Z"
-    }
-  },
-  {
     "model": "users.user",
     "pk": 1,
     "fields": {
@@ -466,7 +18,7 @@
   },
   {
     "model": "users.user",
-    "pk": 2,
+    "pk": 5,
     "fields": {
       "last_login": null,
       "is_superuser": false,
@@ -474,16 +26,16 @@
       "last_name": "",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2024-11-04T13:45:04.461Z",
-      "email": "test@gmail.com",
-      "password": "pbkdf2_sha256$870000$mRatcjomLh6yUvrgF4g1lL$GDUlakl4T1N1UDNSY2QRFPMLLuhB80Vb+a/+H57rSAw=",
+      "date_joined": "2024-11-06T18:15:08.260Z",
+      "email": "test_1@gmail.com",
+      "password": "pbkdf2_sha256$870000$aiYw6sbUqdW8QU8MVui1i2$OWEgAwJE9jOVkm0Pfeu6za5T9a+u3Ifha5l2ntxadoQ=",
       "groups": [],
       "user_permissions": []
     }
   },
   {
     "model": "users.user",
-    "pk": 3,
+    "pk": 6,
     "fields": {
       "last_login": null,
       "is_superuser": false,
@@ -491,39 +43,1313 @@
       "last_name": "",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2024-11-04T13:58:54.158Z",
-      "email": "boba@gmail.com",
-      "password": "pbkdf2_sha256$870000$ytIZXfUYx1mOgdbgtdj0ms$Taagzb3AnyEAj/6O3u50z52KQzfY81ECLbW9LJRwXIA=",
+      "date_joined": "2024-11-06T18:15:15.534Z",
+      "email": "test_2@gmail.com",
+      "password": "pbkdf2_sha256$870000$9Zf5ciVxn8cHEmGfJcWcDO$8e76oS035WRoDT1hQfhxj+j/vkvwRU0eYG9tKoam85s=",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 7,
+    "fields": {
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-06T18:15:20.008Z",
+      "email": "test_3@gmail.com",
+      "password": "pbkdf2_sha256$870000$cNHqdkpMmbLDwf4pQxeyq0$N9HPwVhBt3nevyowf0JO9WNvWz8Ti+BNjpVfXr4URP0=",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 8,
+    "fields": {
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-06T18:15:24.376Z",
+      "email": "test_4@gmail.com",
+      "password": "pbkdf2_sha256$870000$1CjJv19qWjlAotixBQUrNr$m9hQzMxZL1TWSvnO6JrZROctjhYvitYzBJgbQd7i9AU=",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 9,
+    "fields": {
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-06T18:15:28.034Z",
+      "email": "test_5@gmail.com",
+      "password": "pbkdf2_sha256$870000$6u0kT5w1xy3gmvdWWFKjX6$lXUk3QWaNhsoPjmAGQQccjSoHcS42fs95Zn3/eruIz4=",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 10,
+    "fields": {
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-06T18:15:31.951Z",
+      "email": "test_6@gmail.com",
+      "password": "pbkdf2_sha256$870000$9izbitvs5NwxNq2XA8GMDE$dgRXtHTa6HG0Le9+0SiSEoYVgX+4oIZ85wEZkR1nvuY=",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 11,
+    "fields": {
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-06T18:15:35.641Z",
+      "email": "test_7@gmail.com",
+      "password": "pbkdf2_sha256$870000$SDNZ8LYHcNLCLusBI2rJji$XTop4NFdr2e516lEceFTag8u394CyCZqX6FZ1M7HtSQ=",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 12,
+    "fields": {
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-06T18:15:42.690Z",
+      "email": "test_8@gmail.com",
+      "password": "pbkdf2_sha256$870000$4og7RjsMJvIhbvx4lGyA3e$bWuLwu7JdiKgmHwX0+3C3VRvcTjid1ukjV3a4Yt6MeQ=",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 13,
+    "fields": {
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-06T18:15:46.552Z",
+      "email": "test_9@gmail.com",
+      "password": "pbkdf2_sha256$870000$QYo8d6TydXlLdJnygfJHgZ$fqDbhvQ85JCsIpNaCXV+IUjjU0T3GxF4YxK5tg6jgyY=",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 14,
+    "fields": {
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-06T18:15:51.038Z",
+      "email": "test_10@gmail.com",
+      "password": "pbkdf2_sha256$870000$3E4nKLajXgmBGeKgRtCd1k$V8/JbQ9zJcr0A4KcaxN9cJ1putWWIqOZkPr7eLXIomA=",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 15,
+    "fields": {
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-06T18:15:55.232Z",
+      "email": "test_11@gmail.com",
+      "password": "pbkdf2_sha256$870000$18IjbjslCNakdBGUzLDt55$PSVzyNgN484Rq57O2vlqPe8LXS6Cyg/PhKFxMbA3/r8=",
       "groups": [],
       "user_permissions": []
     }
   },
   {
     "model": "links.link",
-    "pk": 1,
+    "pk": 4,
     "fields": {
-      "title": "#3. Базовый класс APIView для представлений | Уроки по Django REST Framework",
-      "description": "Практический курс по Django: https://stepik.org/a/183363Реализуем API-запросы без сериализаторов на базе представлений, унаследованных от базового класса API...",
-      "url": "https://www.youtube.com/watch?v=HNqt2wZyKz4&list=PLA0M1Bcd0w8xZA3Kl1fYmOH_MfLpiYMRs&index=3&ab_channel=selfedu",
-      "preview_image": "https://i.ytimg.com/vi/HNqt2wZyKz4/maxresdefault.jpg",
+      "title": "Real Madrid • Road to Champions League Victory - 2024",
+      "description": "Real Madrid road to victory Real Madrid road to victory 2024Real Madrid road to final Real Madrid road to final 2024Real Madrid road to Champions League 2024...",
+      "url": "https://www.youtube.com/watch?v=9hJrS5QySxI&ab_channel=APSTUDIO",
+      "preview_image": "https://i.ytimg.com/vi/9hJrS5QySxI/maxresdefault.jpg",
       "link_type": "video.other",
-      "created_at": "2024-11-04T20:31:29.796Z",
-      "updated_at": "2024-11-04T20:31:29.797Z",
-      "owner": 2
+      "created_at": "2024-11-06T18:29:31.923Z",
+      "updated_at": "2024-11-06T18:29:31.923Z",
+      "owner": 5
     }
   },
   {
     "model": "links.link",
+    "pk": 5,
+    "fields": {
+      "title": "Open Graph - Вебмастер. Справка",
+      "description": "В стандарте Open Graph одна страница описывает только один объект — человека, компанию или продукт. Для этого объекта и указываются все данные. Чтобы передать информацию сервисам, необходимо в HTML-код (в элемент head) добавить следующие обязательные метатеги:",
+      "url": "https://yandex.ru/support/webmaster/open-graph/intro-open-graph.html",
+      "preview_image": "",
+      "link_type": "article",
+      "created_at": "2024-11-06T18:33:55.030Z",
+      "updated_at": "2024-11-06T18:33:55.030Z",
+      "owner": 5
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 6,
+    "fields": {
+      "title": "Автоматическая документация API Django Rest Framework с помощью DRF Spectacular",
+      "description": "Целью этой статьи является демонстрация возможностей drf-spectacular для документирования API и основного набора техник, которые покроют большую часть сценариев использования. Мы настроим генерацию...",
+      "url": "https://habr.com/ru/articles/733942/",
+      "preview_image": "https://habr.com/share/publication/733942/4c8344f117ba4881880415eb852952ba/",
+      "link_type": "article",
+      "created_at": "2024-11-06T18:34:13.288Z",
+      "updated_at": "2024-11-06T18:34:13.288Z",
+      "owner": 5
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 7,
+    "fields": {
+      "title": "Лисий — Википедия",
+      "description": "",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%81%D0%B8%D0%B9",
+      "preview_image": "https://upload.wikimedia.org/wikipedia/commons/8/84/Lisia%2C_replica_del_I_sec_da_orig._greco_del_IV_sec._ac.%2C_6130.JPG",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:34:33.267Z",
+      "updated_at": "2024-11-06T18:34:33.267Z",
+      "owner": 5
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 8,
+    "fields": {
+      "title": "Хищные мужья для невезучей. Академия Псиоников",
+      "description": "Я безответно влюблена в сокурсника. Да так сильно, что даже приняла пси-тоник собственной разработки, чтобы проникнуть в его сон... Но что-то напутала! И попала в непристойный горячий сон к двум опасным маршалам из хвостатой расы шиарийцев, которые славятся жестокостью и ненавистью к людям.\n\nТеперь маршалы приехали в академию с якобы официальной...",
+      "url": "https://litnet.com/ru/reader/xishchnye-muzhya-dlya-nevezuchei-akademiya-psionikov-b489067",
+      "preview_image": "https://rust.litnet.com/uploads/covers/220/1723235475_2.jpg",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:35:26.180Z",
+      "updated_at": "2024-11-06T18:35:26.181Z",
+      "owner": 5
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 9,
+    "fields": {
+      "title": "Изгнанная жена дракона или огород попаданки",
+      "description": "Книга «Изгнанная жена дракона или огород попаданки». Жанр: Бытовое фэнтези, Попаданцы в другие миры. Автор Елена Солт. Аннотация: Вот это попала в новый мир!Магия безвозвратно утрачена.Репутация подмочена грязными сплетнями.",
+      "url": "https://litnet.com/ru/book/izgnannaya-zhena-drakona-ili-ogorod-popadanki-b480870",
+      "preview_image": "https://rust.litnet.com/uploads/covers/220/1716707304_75.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:38:30.183Z",
+      "updated_at": "2024-11-06T18:38:30.183Z",
+      "owner": 6
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 10,
+    "fields": {
+      "title": "Real Madrid • Road to Champions League Victory - 2018",
+      "description": "Real Madrid road to victory Real Madrid road to victory 2018Real Madrid road to final Real Madrid road to final 2018Real Madrid road to Champions League 2018...",
+      "url": "https://www.youtube.com/watch?v=xuuAHQLqrws&ab_channel=APSTUDIO",
+      "preview_image": "https://i.ytimg.com/vi/xuuAHQLqrws/maxresdefault.jpg",
+      "link_type": "video.other",
+      "created_at": "2024-11-06T18:38:37.077Z",
+      "updated_at": "2024-11-06T18:38:37.077Z",
+      "owner": 6
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 11,
+    "fields": {
+      "title": "Яндекс",
+      "description": "Найдётся всё",
+      "url": "https://yandex.ru/support/webmaster/search-results/site-description.html",
+      "preview_image": "https://yastatic.net/s3/home-static/_/37/37a02b5dc7a51abac55d8a5b6c865f0e.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:38:56.894Z",
+      "updated_at": "2024-11-06T18:38:56.894Z",
+      "owner": 6
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 12,
+    "fields": {
+      "title": "Роскомнадзор, вероятно, начал блокировать подключение к CloudFlare с использованием TLS ECH (Encrypted Client Hello)",
+      "description": "Что такое ECH можно почитать здесь : https://habr.com/ru/news/851994/ Если коротко: без ECH все промежуточные узлы, включая Роскомнадзор, видят доменные имена тех сайтов, на которые клиент ходит по...",
+      "url": "https://habr.com/ru/news/856342/",
+      "preview_image": "https://habr.com/share/publication/856342/2b8fa9426d0fd164db01f0e7d8ca6212/",
+      "link_type": "article",
+      "created_at": "2024-11-06T18:39:09.739Z",
+      "updated_at": "2024-11-06T18:39:09.739Z",
+      "owner": 6
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 13,
+    "fields": {
+      "title": "HOW TO CONNECT DJANGO TO POSTGRESQL AND .ENV (PYTHON-DECOUPLE) IN A LOCAL ENVIRONMENT",
+      "description": "Hi guys, today i will be showing you how to connect your Django application to your PostgreSQL database.",
+      "url": "https://medium.com/@divinedaniel202/how-to-connect-django-to-postgresql-and-env-python-decouple-in-a-local-environment-41246d94777",
+      "preview_image": "https://miro.medium.com/v2/resize:fit:1200/1*CUSQhkOhBxdYJcpvLA-EyA.png",
+      "link_type": "article",
+      "created_at": "2024-11-06T18:39:23.945Z",
+      "updated_at": "2024-11-06T18:39:23.945Z",
+      "owner": 6
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 14,
+    "fields": {
+      "title": "Convert svg to react-native-svg",
+      "description": "What is the easiest way to do this? I found plenty of svg to JSX converters, which is what I want, but that doesn't work in react-native. I need to convert the svg code to something I can display i...",
+      "url": "https://stackoverflow.com/questions/52743387/convert-svg-to-react-native-svg?rq=3",
+      "preview_image": "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:39:38.126Z",
+      "updated_at": "2024-11-06T18:39:38.126Z",
+      "owner": 6
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 15,
+    "fields": {
+      "title": "Популярная музыка — слушать онлайн радио бесплатно",
+      "description": "Слушать популярные песни и музыкальные новинки 2022 на лучших радиостанциях поп-музыки онлайн бесплатно в хорошем качестве!",
+      "url": "https://radiopotok.ru/pop",
+      "preview_image": "https://radiopotok.ru/android-chrome-512x512.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:43:21.538Z",
+      "updated_at": "2024-11-06T18:43:21.538Z",
+      "owner": 7
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 16,
+    "fields": {
+      "title": "Баронесса. Эхо забытой цивилизации",
+      "description": "Книга «Баронесса. Эхо забытой цивилизации». Жанр: Бытовое фэнтези, Научная фантастика. Автор Дарья Верескова. Аннотация: 📖 ОДНОТОМНИК\n\nБудучи бастардом с дремлющей магией, Талира Керьи с детства была чужой в родном доме.Многие верили, что она — дитя тёмного Урго, укравшая магию истинного наследника.",
+      "url": "https://litnet.com/ru/book/baronessa-eho-zabytoi-civilizacii-b491929",
+      "preview_image": "https://rust.litnet.com/uploads/covers/220/1725883467_16.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:43:42.649Z",
+      "updated_at": "2024-11-06T18:43:42.649Z",
+      "owner": 7
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 17,
+    "fields": {
+      "title": "Акция Одна цена | Самые низкие цены | AliExpress",
+      "description": "▶ Популярные товары по самой низкой цене с бесплатной доставкой на AliExpress. ⚡️ Скидки до 90% при покупке от 3-х товаров. ✔️ Электроника, ● товары для дома и сада, ● мода, ● спорт, ● аксессуары, ● товары для детей. Покупай больше, экономь больше!",
+      "url": "https://aliexpress.ru/one-price?spm=a2g2w.home.shelf.1.3d3c274cspzzyF&spmC=shelf&spmD=more",
+      "preview_image": "",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:44:08.554Z",
+      "updated_at": "2024-11-06T18:44:08.554Z",
+      "owner": 7
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 18,
+    "fields": {
+      "title": "How to render svg in react-native?",
+      "description": "Please show me the way how to render SVG file in react-native (0.49).\nThank you in advance.\nI tried to use this library: https://github.com/matc4/react-native-svg-uri\nBut it does not work.\nDetail E...",
+      "url": "https://stackoverflow.com/questions/47048538/how-to-render-svg-in-react-native?rq=3",
+      "preview_image": "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:44:31.871Z",
+      "updated_at": "2024-11-06T18:44:31.871Z",
+      "owner": 7
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 19,
+    "fields": {
+      "title": "Яндекс",
+      "description": "Найдётся всё",
+      "url": "https://yandex.ru/support/webmaster/indexing-options/title-description-doubles.html",
+      "preview_image": "https://yastatic.net/s3/home-static/_/37/37a02b5dc7a51abac55d8a5b6c865f0e.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:44:45.998Z",
+      "updated_at": "2024-11-06T18:44:45.998Z",
+      "owner": 7
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 20,
+    "fields": {
+      "title": "Найдена чёрная дыра, пожирающая материю со скоростью, превышающей теоретический предел в 40 раз",
+      "description": "Самая прожорливая чёрная дыра из всех, что мы когда-либо видели, находится в центре галактики под названием LID-568. Мы видим её такой, какой она была всего через 1,5 миллиарда лет после Большого...",
+      "url": "https://habr.com/ru/news/856316/",
+      "preview_image": "https://habrastorage.org/getpro/habr/upload_files/170/a6f/063/170a6f063a245c2a14c0e56c0c414ca6.jpg",
+      "link_type": "article",
+      "created_at": "2024-11-06T18:45:01.014Z",
+      "updated_at": "2024-11-06T18:45:01.015Z",
+      "owner": 7
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 21,
+    "fields": {
+      "title": "Википедия:Форум — Википедия",
+      "description": "",
+      "url": "https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A4%D0%BE%D1%80%D1%83%D0%BC",
+      "preview_image": "",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:46:15.340Z",
+      "updated_at": "2024-11-06T18:46:15.340Z",
+      "owner": 7
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 22,
+    "fields": {
+      "title": "FRANCE Road to World Cup VICTORY 2018",
+      "description": "FRANCE ✪ Road to Victory - World Cup 2018😍 DON'T FORGET TO TURN ON NOFICATIONS📩 FACEBOOK: https://bit.ly/42TuY1rI must state that in NO way, shape or form ...",
+      "url": "https://www.youtube.com/watch?v=cvy3TUN_ZNo&ab_channel=SunBall",
+      "preview_image": "https://i.ytimg.com/vi/cvy3TUN_ZNo/maxresdefault.jpg",
+      "link_type": "video.other",
+      "created_at": "2024-11-06T18:50:48.422Z",
+      "updated_at": "2024-11-06T18:50:48.422Z",
+      "owner": 8
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 23,
+    "fields": {
+      "title": "Яндекс",
+      "description": "Найдётся всё",
+      "url": "https://yandex.ru/support/webmaster/site-content/data-transmit.html",
+      "preview_image": "https://yastatic.net/s3/home-static/_/37/37a02b5dc7a51abac55d8a5b6c865f0e.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:51:10.386Z",
+      "updated_at": "2024-11-06T18:51:10.386Z",
+      "owner": 8
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 24,
+    "fields": {
+      "title": "ByeDPI + Redsocks на OpenWRT: дарим свободу локальной сети на дровах (на примере ASUS RT-N12 ROM/ОЗУ: 8/32 Мб)",
+      "description": "Решение проблемы обхода блокировок для всех устройств в домашней сети зачастую упирается в дешевый, древний, но исправно выполняющий свое предназначение роутер. В этой статье я расскажу, как настроить...",
+      "url": "https://habr.com/ru/articles/856312/",
+      "preview_image": "https://habr.com/share/publication/856312/e44c3325358faf31ebd1daa5e5a824fa/",
+      "link_type": "article",
+      "created_at": "2024-11-06T18:51:25.305Z",
+      "updated_at": "2024-11-06T18:51:25.305Z",
+      "owner": 8
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 25,
+    "fields": {
+      "title": "How to properly render SVG in React Native",
+      "description": "Hi Have the following code in our react native application:\nimport { SvgCssUri } from 'react-native-svg';\n\n&lt;SvgCssUri style={styles.osIcon} uri={'https://mon.zappiehost.com/images/os/' + props.d...",
+      "url": "https://stackoverflow.com/questions/68520016/how-to-properly-render-svg-in-react-native?rq=3",
+      "preview_image": "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:51:42.303Z",
+      "updated_at": "2024-11-06T18:51:42.303Z",
+      "owner": 8
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 26,
+    "fields": {
+      "title": "User jcalz",
+      "description": "Stack Overflow | The World’s Largest Online Community for Developers",
+      "url": "https://stackoverflow.com/users/2887218/jcalz",
+      "preview_image": "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:54:30.288Z",
+      "updated_at": "2024-11-06T18:54:30.288Z",
+      "owner": 9
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 27,
+    "fields": {
+      "title": "Мария. Королева Нисландии",
+      "description": "Книга «Мария. Королева Нисландии». Жанр: Бытовое фэнтези, Попаданцы в другие миры. Автор Полина Ром. Аннотация: Суровый северный мир и кроткая королевская дочь.Сплетни о «северных дикарях» заранее пугают ее, но кто и когда спрашивал принцесс, чего они хотят?",
+      "url": "https://litnet.com/ru/book/mariya-koroleva-nislandii-b492347",
+      "preview_image": "https://rust.litnet.com/uploads/covers/220/1725721397_85.jpg",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:55:11.386Z",
+      "updated_at": "2024-11-06T18:55:11.386Z",
+      "owner": 9
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 28,
+    "fields": {
+      "title": "Вторая жизнь доктора Лейлы",
+      "description": "Книга «Вторая жизнь доктора Лейлы». Жанр: Бытовое фэнтези, Попаданцы в другие миры. Автор Адель Хайд. Аннотация: Прожила долгую счастливую жизнь и жалела только об одном, что не может больше лечить, подводило зрение.Умирая, подумала: «Вот бы ещё…» и… открыла глаза в другом мире.",
+      "url": "https://litnet.com/ru/book/vtoraya-zhizn-doktora-leily-b497844",
+      "preview_image": "https://rust.litnet.com/uploads/covers/220/1729540669_4.jpg",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:55:23.294Z",
+      "updated_at": "2024-11-06T18:55:23.294Z",
+      "owner": 9
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 29,
+    "fields": {
+      "title": "Делари. Ловушка магистра",
+      "description": "Книга «Делари. Ловушка магистра». Жанр: Попаданцы в другие миры, Приключенческое фэнтези. Автор Лана Волкова (Светлана Волкова). Аннотация: В Академии Радайн безопасно, говорили они.Кровная вражда под запретом, говорили они.",
+      "url": "https://litnet.com/ru/book/delari-lovushka-magistra-b499761",
+      "preview_image": "https://rust.litnet.com/uploads/covers/220/1730588128_82.jpg",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:55:39.169Z",
+      "updated_at": "2024-11-06T18:55:39.169Z",
+      "owner": 9
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 30,
+    "fields": {
+      "title": "Уикс, Генри Уильям — Википедия",
+      "description": "",
+      "url": "https://ru.wikipedia.org/wiki/%D0%A3%D0%B8%D0%BA%D1%81,_%D0%93%D0%B5%D0%BD%D1%80%D0%B8_%D0%A3%D0%B8%D0%BB%D1%8C%D1%8F%D0%BC",
+      "preview_image": "https://upload.wikimedia.org/wikipedia/ru/f/f1/H.W.Wicks.jpg",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:56:18.999Z",
+      "updated_at": "2024-11-06T18:56:18.999Z",
+      "owner": 9
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 31,
+    "fields": {
+      "title": "Имперская фашистская лига — Википедия",
+      "description": "",
+      "url": "https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D1%84%D0%B0%D1%88%D0%B8%D1%81%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BB%D0%B8%D0%B3%D0%B0",
+      "preview_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Emblem_of_the_Imperial_Fascist_League.svg/1200px-Emblem_of_the_Imperial_Fascist_League.svg.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:56:32.172Z",
+      "updated_at": "2024-11-06T18:56:32.173Z",
+      "owner": 9
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 32,
+    "fields": {
+      "title": "Вторая мировая война — Википедия",
+      "description": "",
+      "url": "https://ru.wikipedia.org/wiki/%D0%92%D1%82%D0%BE%D1%80%D0%B0%D1%8F_%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B0",
+      "preview_image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/WW2_collage.jpg",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:57:34.570Z",
+      "updated_at": "2024-11-06T18:57:34.570Z",
+      "owner": 10
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 33,
+    "fields": {
+      "title": "Яндекс",
+      "description": "Найдётся всё",
+      "url": "https://yandex.ru/support/webmaster/service/site-info.html",
+      "preview_image": "https://yastatic.net/s3/home-static/_/37/37a02b5dc7a51abac55d8a5b6c865f0e.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:57:49.197Z",
+      "updated_at": "2024-11-06T18:57:49.197Z",
+      "owner": 10
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 34,
+    "fields": {
+      "title": "70% AVERAGE HEADSHOT??",
+      "description": "lik and subscib pls)STEAM : https://steamcommunity.com/profiles/76561198837100103/FACEIT : https://www.faceit.com/en/players/rabixdxdyou can support here: ht...",
+      "url": "https://www.youtube.com/watch?v=YaB_LagKG7c&ab_channel=rabixdxdcs",
+      "preview_image": "https://i.ytimg.com/vi/YaB_LagKG7c/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH8CYAC0AWKAgwIABABGGUgWihKMA8=&rs=AOn4CLAybOT-ZYYdJl99sFXWX6euYJX9Lw",
+      "link_type": "video.other",
+      "created_at": "2024-11-06T18:58:14.189Z",
+      "updated_at": "2024-11-06T18:58:14.189Z",
+      "owner": 10
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 35,
+    "fields": {
+      "title": "Новостные радиостанции",
+      "description": "Подборка новостных радиостанций на русском языке. Слушайте онлайн новости на радио.",
+      "url": "https://radiopotok.ru/news",
+      "preview_image": "https://radiopotok.ru/android-chrome-512x512.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:58:26.134Z",
+      "updated_at": "2024-11-06T18:58:26.134Z",
+      "owner": 10
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 36,
+    "fields": {
+      "title": "ТурбоХакатон «Решения для электроэнергетики на базе искусственного интеллекта» / Хабр",
+      "description": "ТурбоХакатон — это соревнование для молодых, талантливых Data Science и Deep Learning специалистов. Ты сможешь решить интересные задачи, основываясь на реальных датасетах компании Группы «Интер РАО»....",
+      "url": "https://habr.com/ru/events/508/",
+      "preview_image": "/img/habr_ru.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T18:58:46.311Z",
+      "updated_at": "2024-11-06T18:58:46.311Z",
+      "owner": 10
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 37,
+    "fields": {
+      "title": "Поющий молится дважды или пишем приложение в помощь хористу",
+      "description": "Картинка для привлечения внимания Я не имею ничего против книг на бумаге, но вряд ли вы поспорите с тем, что их электронные версии порой бывают удобнее в силу меньших габаритов, веса, а также наличия...",
+      "url": "https://habr.com/ru/articles/856330/",
+      "preview_image": "https://habrastorage.org/getpro/habr/upload_files/757/b11/9f0/757b119f03c191ce038e48317add4032.jpg",
+      "link_type": "article",
+      "created_at": "2024-11-06T19:00:47.638Z",
+      "updated_at": "2024-11-06T19:00:47.638Z",
+      "owner": 11
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 38,
+    "fields": {
+      "title": "Яндекс",
+      "description": "Найдётся всё",
+      "url": "https://yandex.ru/support/webmaster/json-ld/about.html",
+      "preview_image": "https://yastatic.net/s3/home-static/_/37/37a02b5dc7a51abac55d8a5b6c865f0e.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:01:05.825Z",
+      "updated_at": "2024-11-06T19:01:05.825Z",
+      "owner": 11
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 39,
+    "fields": {
+      "title": "11 minutes of m0NESY CS2 DOMINATION!",
+      "description": "When m0NESY POPS OFF in CS2.. 11 minutes of m0NESY CS2 DOMINATION!If you're looking to sell CS2 skins for real money, be sure to check out https://sellpixels...",
+      "url": "https://www.youtube.com/watch?v=BdmeYqEIrvQ&ab_channel=CS2ClipZone",
+      "preview_image": "https://i.ytimg.com/vi/BdmeYqEIrvQ/hqdefault.jpg",
+      "link_type": "video.other",
+      "created_at": "2024-11-06T19:01:19.110Z",
+      "updated_at": "2024-11-06T19:01:19.110Z",
+      "owner": 11
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 40,
+    "fields": {
+      "title": "Универ. Новая общага 1 сезон, 33 серия",
+      "description": "Оставленным на второй год пятикурсникам Антону и Кузе привалило счастье. Их старая общага идет под снос, и в новом корпусе их селят в блок с тремя девушками ...",
+      "url": "https://www.youtube.com/watch?v=AmD783htx08&ab_channel=%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80.%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%D0%BE%D0%B1%D1%89%D0%B0%D0%B3%D0%B0",
+      "preview_image": "https://i.ytimg.com/vi/AmD783htx08/maxresdefault.jpg",
+      "link_type": "video.other",
+      "created_at": "2024-11-06T19:01:31.192Z",
+      "updated_at": "2024-11-06T19:01:31.192Z",
+      "owner": 11
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 41,
+    "fields": {
+      "title": "Paylocity  - Stack Overflow",
+      "description": "Review Paylocity job openings and career opportunities on Stack Overflow Jobs. Learn more about Paylocity employee benefits, their tech stack and more.",
+      "url": "https://stackoverflow.com/jobs/companies/paylocity",
+      "preview_image": "",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:01:51.077Z",
+      "updated_at": "2024-11-06T19:01:51.077Z",
+      "owner": 11
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 42,
+    "fields": {
+      "title": "Empowering the world to develop technology through collective knowledge – Stack Overflow",
+      "description": "Founded in 2008, Stack Overflow’s public platform is used by nearly everyone who codes to learn, share their knowledge, collaborate, and build their careers.",
+      "url": "https://stackoverflow.co/",
+      "preview_image": "",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:02:02.709Z",
+      "updated_at": "2024-11-06T19:02:02.709Z",
+      "owner": 11
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 43,
+    "fields": {
+      "title": "News & press – Stack Exchange Inc. - Stack Overflow",
+      "description": "Founded in 2008, Stack Overflow’s public platform is used by nearly everyone who codes to learn, share their knowledge, collaborate, and build their careers.",
+      "url": "https://stackoverflow.co/company/press/",
+      "preview_image": "",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:02:21.103Z",
+      "updated_at": "2024-11-06T19:02:21.103Z",
+      "owner": 11
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 44,
+    "fields": {
+      "title": "Темный лорд для попаданки",
+      "description": "Книга «Темный лорд для попаданки». Жанр: Попаданцы в другие миры, Приключенческое фэнтези. Автор Боярова Мелина. Аннотация: Проснуться в незнакомой постели — сомнительный финал вечеринки.Хуже, если эта постель для новобрачных, а в ней чужой жених с кинжалом в груди.",
+      "url": "https://litnet.com/ru/book/temnyi-lord-dlya-popadanki-b426306",
+      "preview_image": "https://rust.litnet.com/uploads/covers/220/1675280195_10.jpg",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:02:40.224Z",
+      "updated_at": "2024-11-06T19:02:40.224Z",
+      "owner": 11
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 45,
+    "fields": {
+      "title": "Trusted Knowledge Sharing Platform for Technologists – Stack Overflow for Teams",
+      "description": "Stack Overflow for Teams is a secure knowledge sharing platform trusted by the world’s largest community of developers and technologists. We boost team productivity and collaboration through a centralized knowledge base and easy to use, familiar platform.",
+      "url": "https://stackoverflow.co/teams/",
+      "preview_image": "https://stackoverflow.co/img/product/teams/og/teams.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:04:18.921Z",
+      "updated_at": "2024-11-06T19:04:18.921Z",
+      "owner": 12
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 46,
+    "fields": {
+      "title": "Нацистская Германия — Википедия",
+      "description": "",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D1%81%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F",
+      "preview_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Germany_%281935%E2%80%931945%29.svg/1200px-Flag_of_Germany_%281935%E2%80%931945%29.svg.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:04:31.128Z",
+      "updated_at": "2024-11-06T19:04:31.128Z",
+      "owner": 12
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 47,
+    "fields": {
+      "title": "ЗАСМЕЯЛСЯ - ПРОИГРАЛ! / Маленькое шоу (Бустер, Сабина, Янчик, Хазяева, Дилблин, Кокошка, Монтажник)",
+      "description": "🚗 Забери BMW M3 от Majestic RP - https://majestic-rp.ru/bmwПромокод \"MATIZ\" дает 50.000$ и 7 дней PLATINUM VIP на любом сервере Majestic RPMajestic VK и TG:...",
+      "url": "https://www.youtube.com/watch?v=zzI3OcKfXCM&ab_channel=ExileShow",
+      "preview_image": "https://i.ytimg.com/vi/zzI3OcKfXCM/maxresdefault.jpg",
+      "link_type": "video.other",
+      "created_at": "2024-11-06T19:04:46.035Z",
+      "updated_at": "2024-11-06T19:04:46.035Z",
+      "owner": 12
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 48,
+    "fields": {
+      "title": "Свидания в ПОЛНОЙ ТЕМНОТЕ ! 3 Блогера VS 5 Моделей",
+      "description": "Сплит в Яндекс Браузере на любых сайтах: https://clck.ru/3Dqgtb?erid=LjN8JswFh (https://clck.ru/3Dqgtb)_____________________На Ozon проходит Вау-распродажа с...",
+      "url": "https://www.youtube.com/watch?v=8fFgH934txo&ab_channel=%D0%92%D0%BB%D0%BE%D0%B3%D0%A1%D0%BA%D1%83%D0%B0%D0%B4",
+      "preview_image": "https://i.ytimg.com/vi/8fFgH934txo/maxresdefault.jpg",
+      "link_type": "video.other",
+      "created_at": "2024-11-06T19:05:40.545Z",
+      "updated_at": "2024-11-06T19:05:40.545Z",
+      "owner": 13
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 49,
+    "fields": {
+      "title": "Национальный Суперкомпьютерный Форум пройдёт в Переславле 26—29 ноября 2024 года",
+      "description": "Тринадцатый НСКФ пройдёт с 26 по 29 ноября 2024 года. В его программе будут научно-практическая конференция, мастер-классы, выставка, пресс-конференция и круглый стол. В холле будут чай, кофе, печенье...",
+      "url": "https://habr.com/ru/articles/856596/",
+      "preview_image": "https://habr.com/share/publication/856596/86dbd539d72034fc42a00e5c6019279d/",
+      "link_type": "article",
+      "created_at": "2024-11-06T19:06:27.572Z",
+      "updated_at": "2024-11-06T19:06:27.572Z",
+      "owner": 13
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 50,
+    "fields": {
+      "title": "ПОСЕТИЛИ ЗАБРОШЕННУЮ НЕМЕЦКУЮ ПСИХИАТРИЧЕСКУЮ БОЛЬНИЦУ АЛЛЕНБЕРГ НОЧЬЮ! ГостФакерс",
+      "description": "https://bit.ly/3zcERLi — ЗАБИРАЙ ХАЛЯВУ В WARFACEСегодня наш отряд посетит заброшенную психиатрическую больницу «Алленберг»Как думаете пройдёт ли все по план...",
+      "url": "https://www.youtube.com/watch?v=qrYlCE4I3dg&ab_channel=ExileShow",
+      "preview_image": "https://i.ytimg.com/vi/qrYlCE4I3dg/maxresdefault.jpg",
+      "link_type": "video.other",
+      "created_at": "2024-11-06T19:07:26.203Z",
+      "updated_at": "2024-11-06T19:07:26.203Z",
+      "owner": 14
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 51,
+    "fields": {
+      "title": "ПРЯТКИ в ОГРОМНОМ Особняке за Миллионы Денег!",
+      "description": "Скачивай Blink и будь всегда в курсе, где прячутся твои друзья: https://blinkmap.comУрви свой realme C55 здесь: https://bit.ly/3ALuttxДолгожданные прятки в о...",
+      "url": "https://www.youtube.com/watch?v=x6bA2BLaf10&t=1907s&ab_channel=ExileShow",
+      "preview_image": "https://i.ytimg.com/vi/x6bA2BLaf10/maxresdefault.jpg",
+      "link_type": "video.other",
+      "created_at": "2024-11-06T19:07:42.706Z",
+      "updated_at": "2024-11-06T19:07:42.706Z",
+      "owner": 14
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 52,
+    "fields": {
+      "title": "Яндекс",
+      "description": "Найдётся всё",
+      "url": "https://yandex.ru/support/webmaster/site-content/data-transmit.html",
+      "preview_image": "https://yastatic.net/s3/home-static/_/37/37a02b5dc7a51abac55d8a5b6c865f0e.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:07:53.158Z",
+      "updated_at": "2024-11-06T19:07:53.158Z",
+      "owner": 14
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 53,
+    "fields": {
+      "title": "Глобально оптимальный, восьмой и наиболее быстрый вид интерпретаторов байткода",
+      "description": "Совершать невозможное и раздавать пинки здравому смыслу — в этом и состоит жизнь членов Гуррен-Дана! (C) Камина Эта статья вступает в техническую полемику со статьей 2015 года за авторством Atakua ,...",
+      "url": "https://habr.com/ru/articles/856480/",
+      "preview_image": "https://habrastorage.org/getpro/habr/upload_files/091/b55/05a/091b5505af7c712365ef13afa78157bf.png",
+      "link_type": "article",
+      "created_at": "2024-11-06T19:08:09.291Z",
+      "updated_at": "2024-11-06T19:08:09.291Z",
+      "owner": 14
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 54,
+    "fields": {
+      "title": "Integrate Stack Overflow for Teams With Your Tech Stack – Stack Overflow for Teams",
+      "description": "Introducing Stack Overflow for Teams in your organization will level up your developer experience and centralize critical knowledge to help boost team productivity and collaboration.",
+      "url": "https://stackoverflow.co/teams/integrations/",
+      "preview_image": "https://stackoverflow.co/img/product/teams/og/teams-integrations.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:08:19.910Z",
+      "updated_at": "2024-11-06T19:08:19.910Z",
+      "owner": 14
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 55,
+    "fields": {
+      "title": "Empower your organization for an AI future with Stack Overflow for Teams - Stack Overflow",
+      "description": "Build a collective, enterprise-grade knowledge base around technology transformations, including GenAI and AI/ML.",
+      "url": "https://stackoverflow.co/teams/ai/",
+      "preview_image": "https://stackoverflow.co/img/product/teams/og/overflowai.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:09:37.195Z",
+      "updated_at": "2024-11-06T19:09:37.195Z",
+      "owner": 15
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 56,
+    "fields": {
+      "title": "Тоталитаризм — Википедия",
+      "description": "",
+      "url": "https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D1%82%D0%B0%D0%BB%D0%B8%D1%82%D0%B0%D1%80%D0%B8%D0%B7%D0%BC",
+      "preview_image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Palazzo_Braschi_Fascist_Poster%2C_1934.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:09:50.282Z",
+      "updated_at": "2024-11-06T19:09:50.282Z",
+      "owner": 15
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 57,
+    "fields": {
+      "title": "Литературные конкурсы для авторов на Самиздат «Litnet»",
+      "description": "",
+      "url": "https://litnet.com/ru/contests",
+      "preview_image": "",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:10:12.138Z",
+      "updated_at": "2024-11-06T19:10:12.138Z",
+      "owner": 15
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 58,
+    "fields": {
+      "title": "Радио с русскими песнями | 176 радиостанций",
+      "description": "Большая подборка радиостанций с русской музыкой: новые песни, хиты, рэп, рок, новинки. Каждый найдет русское радио на свой вкус. ",
+      "url": "https://radiopotok.ru/russian",
+      "preview_image": "https://radiopotok.ru/android-chrome-512x512.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:10:36.279Z",
+      "updated_at": "2024-11-06T19:10:36.279Z",
+      "owner": 15
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 59,
+    "fields": {
+      "title": "Радио Ретро – слушать онлайн бесплатно",
+      "description": "Большая подборка радиостанций транслирующих ретро музыку. Слушайте онлайн ФМ радио в стиле Ретро вместе с нами бесплатно!",
+      "url": "https://radiopotok.ru/retro",
+      "preview_image": "https://radiopotok.ru/android-chrome-512x512.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:10:45.951Z",
+      "updated_at": "2024-11-06T19:10:45.951Z",
+      "owner": 15
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 60,
+    "fields": {
+      "title": "Сборка мусора в Java. Часть №1. Обзор сборщиков мусора и их различий",
+      "description": "Команда Spring АйО перевела и адаптировала доклад \"Garbage Collection in Java: The progress since JDK 8\" Стефана Йоханссона(Stefan Johansson) с последнего Devoxx Belgium. Доклад получилось поделить на...",
+      "url": "https://habr.com/ru/companies/spring_aio/articles/856468/",
+      "preview_image": "https://habrastorage.org/getpro/habr/upload_files/7c7/8a7/656/7c78a7656c6ad7b93d2bc59585f7daa9.png",
+      "link_type": "article",
+      "created_at": "2024-11-06T19:11:04.312Z",
+      "updated_at": "2024-11-06T19:11:04.312Z",
+      "owner": 15
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 61,
+    "fields": {
+      "title": "Вайб-чек для бэкендеров",
+      "description": "Проверьте вашу совместимость с командами бэкенда и выберите работодателя по вайбу на Хабр Карьере",
+      "url": "https://vibe.habr.com/?utm_source=pb_vibe_check_backend2",
+      "preview_image": "https://cdn.prod.website-files.com/66bc99230f4c057be66fd3a9/6719f99f2d70d7e9e11ac50e_%D0%B1%D1%8D%D0%B9%D0%B4%D0%B6%201200%D1%85630.png",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:11:29.770Z",
+      "updated_at": "2024-11-06T19:11:29.770Z",
+      "owner": 15
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 62,
+    "fields": {
+      "title": "БИТВА ЗА PS5! ОСКАР ДОВЕЛ ДО СЛЕЗ МАЛЕНЬКОГО НЕЙМАРА",
+      "description": "Забери подарок https://t.me/twodrotsshow/3599",
+      "url": "https://www.youtube.com/watch?v=MOY45zttaBg&ab_channel=2DROTS",
+      "preview_image": "https://i.ytimg.com/vi/MOY45zttaBg/maxresdefault.jpg",
+      "link_type": "video.other",
+      "created_at": "2024-11-06T19:11:47.089Z",
+      "updated_at": "2024-11-06T19:11:47.089Z",
+      "owner": 15
+    }
+  },
+  {
+    "model": "links.link",
+    "pk": 63,
+    "fields": {
+      "title": "Политические репрессии — Википедия",
+      "description": "",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5_%D1%80%D0%B5%D0%BF%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B8",
+      "preview_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Last_Address_Sign_%E2%80%94_Myasnitskaya_Ulitsa_15%2C_Moscow.jpg/1200px-Last_Address_Sign_%E2%80%94_Myasnitskaya_Ulitsa_15%2C_Moscow.jpg",
+      "link_type": "website",
+      "created_at": "2024-11-06T19:12:08.840Z",
+      "updated_at": "2024-11-06T19:12:08.840Z",
+      "owner": 15
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 1,
+    "fields": {
+      "title": "my cl number 1",
+      "description": "rrtt qqww",
+      "created_at": "2024-11-06T19:38:16.286Z",
+      "updated_at": "2024-11-06T19:38:16.286Z",
+      "owner": 5,
+      "links": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
     "pk": 2,
     "fields": {
-      "title": "#3. Базовый класс APIView для представлений | Уроки по Django REST Framework",
-      "description": "Практический курс по Django: https://stepik.org/a/183363Реализуем API-запросы без сериализаторов на базе представлений, унаследованных от базового класса API...",
-      "url": "https://www.youtube.com/watch?v=HNqt2wZyKz4&list=PLA0M1Bcd0w8xZA3Kl1fYmOH_MfLpiYMRs&index=3&ab_channel=selfedu",
-      "preview_image": "https://i.ytimg.com/vi/HNqt2wZyKz4/maxresdefault.jpg",
-      "link_type": "video.other",
-      "created_at": "2024-11-06T14:12:56.173Z",
-      "updated_at": "2024-11-06T14:12:56.173Z",
-      "owner": 3
+      "title": "my cl number 1",
+      "description": "rrtt qqww",
+      "created_at": "2024-11-06T19:39:15.258Z",
+      "updated_at": "2024-11-06T19:39:15.258Z",
+      "owner": 6,
+      "links": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 3,
+    "fields": {
+      "title": "my cl number 2",
+      "description": "rrjjjjjtt qqww",
+      "created_at": "2024-11-06T19:39:37.737Z",
+      "updated_at": "2024-11-06T19:39:37.737Z",
+      "owner": 6,
+      "links": [
+        12,
+        13,
+        14
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 4,
+    "fields": {
+      "title": "my cl number 2",
+      "description": "rrjjjjjtt qqww",
+      "created_at": "2024-11-06T19:39:57.973Z",
+      "updated_at": "2024-11-06T19:39:57.973Z",
+      "owner": 6,
+      "links": [
+        12,
+        13,
+        14
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 5,
+    "fields": {
+      "title": "my cl number 1",
+      "description": "gjrgr qqww",
+      "created_at": "2024-11-06T19:42:06.285Z",
+      "updated_at": "2024-11-06T19:42:06.285Z",
+      "owner": 7,
+      "links": [
+        15,
+        16,
+        17
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 6,
+    "fields": {
+      "title": "my cl number 2",
+      "description": "gjrgr fkfg",
+      "created_at": "2024-11-06T19:42:38.609Z",
+      "updated_at": "2024-11-06T19:42:38.609Z",
+      "owner": 7,
+      "links": [
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 7,
+    "fields": {
+      "title": "my cl number 1",
+      "description": "gjkb kfg",
+      "created_at": "2024-11-06T19:44:02.088Z",
+      "updated_at": "2024-11-06T19:44:02.088Z",
+      "owner": 8,
+      "links": [
+        22,
+        23,
+        24,
+        25
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 8,
+    "fields": {
+      "title": "my cl number 1",
+      "description": "bgfg kfg",
+      "created_at": "2024-11-06T19:45:21.319Z",
+      "updated_at": "2024-11-06T19:45:21.319Z",
+      "owner": 9,
+      "links": [
+        26,
+        27,
+        28
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 9,
+    "fields": {
+      "title": "my cl number 2",
+      "description": "kkkk kfg",
+      "created_at": "2024-11-06T19:45:37.880Z",
+      "updated_at": "2024-11-06T19:45:37.880Z",
+      "owner": 9,
+      "links": [
+        29,
+        30,
+        31
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 10,
+    "fields": {
+      "title": "my cl number 1",
+      "description": "kkweew kfg",
+      "created_at": "2024-11-06T19:46:52.728Z",
+      "updated_at": "2024-11-06T19:46:52.728Z",
+      "owner": 10,
+      "links": [
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 11,
+    "fields": {
+      "title": "my cl number 1",
+      "description": "qwer kfg",
+      "created_at": "2024-11-06T19:48:02.712Z",
+      "updated_at": "2024-11-06T19:48:02.712Z",
+      "owner": 11,
+      "links": [
+        37,
+        38,
+        39,
+        40
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 12,
+    "fields": {
+      "title": "my cl number 2",
+      "description": "qwer llr",
+      "created_at": "2024-11-06T19:48:24.001Z",
+      "updated_at": "2024-11-06T19:48:24.001Z",
+      "owner": 11,
+      "links": [
+        41,
+        42,
+        43,
+        44
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 13,
+    "fields": {
+      "title": "my cl number 1",
+      "description": "llleterregre llr",
+      "created_at": "2024-11-06T19:49:17.009Z",
+      "updated_at": "2024-11-06T19:49:17.009Z",
+      "owner": 12,
+      "links": [
+        45,
+        46,
+        47
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 14,
+    "fields": {
+      "title": "my cl number 1",
+      "description": "jj oo",
+      "created_at": "2024-11-06T19:50:37.718Z",
+      "updated_at": "2024-11-06T19:50:37.718Z",
+      "owner": 13,
+      "links": [
+        48,
+        49
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 15,
+    "fields": {
+      "title": "my cl number 1",
+      "description": "vkf okko",
+      "created_at": "2024-11-06T19:52:09.463Z",
+      "updated_at": "2024-11-06T19:52:09.463Z",
+      "owner": 14,
+      "links": [
+        50,
+        51
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 16,
+    "fields": {
+      "title": "my cl number 2",
+      "description": "lrgrgke okko",
+      "created_at": "2024-11-06T19:52:26.503Z",
+      "updated_at": "2024-11-06T19:52:26.503Z",
+      "owner": 14,
+      "links": [
+        52,
+        53,
+        54
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 17,
+    "fields": {
+      "title": "my cl number 1",
+      "description": "vnnvfi pppko",
+      "created_at": "2024-11-06T19:53:30.626Z",
+      "updated_at": "2024-11-06T19:53:30.626Z",
+      "owner": 15,
+      "links": [
+        56,
+        57,
+        55
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 18,
+    "fields": {
+      "title": "my cl number 2",
+      "description": "asqw olki",
+      "created_at": "2024-11-06T19:53:47.880Z",
+      "updated_at": "2024-11-06T19:53:47.880Z",
+      "owner": 15,
+      "links": [
+        58,
+        59,
+        60
+      ]
+    }
+  },
+  {
+    "model": "links.collection",
+    "pk": 19,
+    "fields": {
+      "title": "my cl number 3",
+      "description": "vfmgr kk",
+      "created_at": "2024-11-06T19:54:10.676Z",
+      "updated_at": "2024-11-06T19:54:10.676Z",
+      "owner": 15,
+      "links": [
+        61,
+        62,
+        63
+      ]
     }
   }
 ]

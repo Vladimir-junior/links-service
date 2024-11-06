@@ -5,7 +5,7 @@ from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from rest_framework.routers import DefaultRouter
 
-from users.api.v1.views import UserViewSet
+from users.api.v1.views import UserViewSet, TopUsersView
 from links.api.v1.views import LinkViewSet, CollectionViewSet
 
 
@@ -29,4 +29,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include(router.urls)),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('api/v1/top-users/', TopUsersView.as_view(), name='top-users'),
 ]
