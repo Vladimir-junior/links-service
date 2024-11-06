@@ -6,17 +6,25 @@ from rest_framework.response import Response
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
 
-
 from users.api.v1.serializers import (
     SignUpSerializer,
     PasswordResetSerializer,
     SignInSerializer,
-    ChangePasswordSerializer
+    ChangePasswordSerializer,
+    UserSerializer
 )
 from users.models import User
 
 
 class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+    def get_queryset(self):
+        if getattr(self, 'swagger_fake_view', False):
+            return self.queryset.none()
+        return self.queryset.filter(id=self.request.user.id)
+
     @action(
         detail=False,
         methods=['post'],
@@ -69,7 +77,10 @@ class UserViewSet(viewsets.ModelViewSet):
         permission_classes=[IsAuthenticated]
     )
     def change_password(self, request: Request) -> Response:
-        serializer = ChangePasswordSerializer(data=request.data, context={'request': request})
+        serializer = (ChangePasswordSerializer(
+            data=request.data,
+            context={'request': request}
+        ))
         result = {"status": "ok"}
         response_status = status.HTTP_201_CREATED
         if serializer.is_valid():
@@ -93,4 +104,3 @@ class UserViewSet(viewsets.ModelViewSet):
             result = serializer.errors
             response_status = status.HTTP_400_BAD_REQUEST
         return Response(result, status=response_status)
-

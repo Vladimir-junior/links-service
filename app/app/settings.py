@@ -1,12 +1,9 @@
 import os
 
 from pathlib import Path
-from dotenv import load_dotenv
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-load_dotenv()
 
 SECRET_KEY = 'django-insecure-zlreubm(=vex2fsz+1iiq#2@p#-x7qd4p*kf6wo-6e2pp=h0cf'
 
@@ -24,6 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    'drf_yasg',
     'users',
     'links',
 ]

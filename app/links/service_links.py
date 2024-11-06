@@ -2,11 +2,12 @@ import requests
 
 from bs4 import BeautifulSoup
 
+from links.const import LinkTypeEnum
+
 
 class ServiceLink:
     @staticmethod
     def parse_link(url: str) -> dict:
-        from links.models import LinkTypeEnum
 
         data = {
             'title': '',
@@ -26,7 +27,7 @@ class ServiceLink:
             og_type = soup.find('meta', property='og:type')
 
             data['title'] = og_title['content'] if og_title else soup.title.string if soup.title else ''
-            data['description'] = og_description['content'] if og_description else soup.find('meta', attrs={'name': 'description'}).get('content', '') if soup.find('meta', attrs={'name': 'description'}) else ''
+            data['description'] = (og_description or soup.find('meta', attrs={'name': 'description'}) or {}).get('content', '')
             data['preview_image'] = og_image['content'] if og_image else ''
             data['link_type'] = og_type['content'] if og_type else data['link_type']
 

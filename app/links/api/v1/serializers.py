@@ -1,4 +1,5 @@
 from typing import Any, Dict
+
 from rest_framework import serializers
 
 from links.models import Link, Collection
@@ -8,7 +9,10 @@ from links.service_links import ServiceLink
 class LinkSerializer(serializers.ModelSerializer):
     title = serializers.CharField(required=False)
     owner = serializers.PrimaryKeyRelatedField(read_only=True)
-    links = serializers.ListField(child=serializers.PrimaryKeyRelatedField(queryset=Link.objects.all()), required=False)
+    links = serializers.ListField(
+        child=serializers.PrimaryKeyRelatedField(queryset=Link.objects.all()),
+        required=False
+    )
 
     class Meta:
         model = Link
@@ -31,11 +35,23 @@ class LinkSerializer(serializers.ModelSerializer):
 
 
 class CollectionSerializer(serializers.ModelSerializer):
-    links = serializers.PrimaryKeyRelatedField(queryset=Link.objects.all(), many=True, required=False)
+    links = serializers.PrimaryKeyRelatedField(
+        queryset=Link.objects.all(),
+        many=True,
+        required=False
+    )
 
     class Meta:
         model = Collection
-        fields = ['id', 'title', 'description', 'created_at', 'updated_at', 'owner', 'links']
+        fields = [
+            'id',
+            'title',
+            'description',
+            'created_at',
+            'updated_at',
+            'owner',
+            'links'
+        ]
         read_only_fields = ['owner', 'created_date', 'updated_date']
 
     def create(self, validated_data: Dict[str, Any]) -> Collection:

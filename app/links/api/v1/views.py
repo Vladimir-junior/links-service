@@ -11,7 +11,11 @@ class LinkViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
-        return self.queryset.filter(owner=self.request.user)
+        if getattr(self, 'swagger_fake_view', False):
+            return self.queryset
+        if self.request.user.is_authenticated:
+            return self.queryset.filter(owner=self.request.user)
+        return self.queryset.none()
 
     def perform_create(self, serializer: Serializer) -> None:
         serializer.save(owner=self.request.user)
@@ -23,7 +27,11 @@ class CollectionViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
-        return self.queryset.filter(owner=self.request.user)
+        if getattr(self, 'swagger_fake_view', False):
+            return self.queryset
+        if self.request.user.is_authenticated:
+            return self.queryset.filter(owner=self.request.user)
+        return self.queryset.none()
 
     def perform_create(self, serializer: Serializer) -> None:
         serializer.save(owner=self.request.user)

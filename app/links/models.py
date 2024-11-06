@@ -1,22 +1,9 @@
-from enum import Enum
-from typing import List
 from django.db import models
 from django.db.models import UniqueConstraint
 
 from users.models import User
+from links.const import LinkTypeEnum
 from links.service_links import ServiceLink
-
-
-class LinkTypeEnum(Enum):
-    WEBSITE = 'website'
-    BOOK = 'book'
-    ARTICLE = 'article'
-    MUSIC = 'music'
-    VIDEO = 'video'
-
-    @classmethod
-    def choices(cls) -> List[tuple]:
-        return [(choice.value, choice.name.capitalize()) for choice in cls]
 
 
 class Link(models.Model):
@@ -41,7 +28,7 @@ class Link(models.Model):
     def __str__(self):
         return self.title
 
-    def fetch_link_data(self) -> None:
+    def process_link(self) -> None:
         data = ServiceLink.parse_link(self.url)
         self.title = data['title'] or self.title
         self.description = data['description'] or self.description
