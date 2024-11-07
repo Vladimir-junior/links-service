@@ -46,6 +46,8 @@
 
 #### Test data:
 
++ **Password for all users:** 12345678
+
 + You need to be in the terminal of the app container
 
     ```
